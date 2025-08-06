@@ -20,7 +20,7 @@ int main()
 
     double next_number = 0 ; 
     int remaining_group_numbers = 0 ; 
-    int group_length;
+    double group_length = 0;
     double total = 0 ; 
 
     while(!feof(f)){
@@ -37,6 +37,7 @@ int main()
             printf("%.0lf " , next_number) ; 
 
             total = total + next_number ; 
+            group_length++; 
             remaining_group_numbers-- ; 
 
             if(remaining_group_numbers == 0){
@@ -46,5 +47,8 @@ int main()
         }
     }
 
+    printf("\ntotal = %lf" , total) ;
+    printf("\ngrouplength = %lf", group_length) ;
+    printf("\naverage = %lf" , total/group_length) ;
     return 0 ;
 }

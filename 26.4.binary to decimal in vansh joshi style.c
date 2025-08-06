@@ -31,6 +31,7 @@ int decimal(char *bin , int n){
         
        }
 
+       
        if(bin[i] == '1' && i==n-1){
         dec++ ;
         break; 

@@ -5,8 +5,8 @@
 int merge(int *arr1 , int *arr2 , int len1 , int len2, int *r);
 
 int main(){
-    int arr1[] = {1,3,5,7,9};
-    int arr2[] = {2,4,5,6,8};
+    int arr1[] = {1,2,4};
+    int arr2[] = {1,3,4};
     int len1 = sizeof(arr1) / sizeof(int) ; 
     int len2 = sizeof(arr2) / sizeof(int);
     int r[10]; 

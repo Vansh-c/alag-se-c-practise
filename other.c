@@ -1,31 +1,28 @@
-// program to read a file and display its contents 
-
-
-#include <stdio.h>
-#include <errno.h>
+#include <stdio.h> 
 #include <string.h>
-#include <stdlib.h>
 
+
+int ret(char *s , char u , char v){
+  int len = strlen(s) ; 
+
+  for(int i = 0 ; i<len ; i++){
+    if(s[i] == u){
+      s[i] = v ; 
+    
+    }
+  }
+}
 
 int main()
-{ 
-  FILE *fh;
-  
-  fh = fopen("75.1file.txt", "r");
-  
-  if (fh != NULL)
-  {
-    char c;
-    while ( (c = fgetc(fh)) != EOF )
-      putchar(c);
-    
-    fclose(fh);
-  
-  } 
-  else{
-    printf("Error value =  %d \n", errno);
-    printf("%s",strerror(2)) ; 
-  }
-  
-  return 0;
+{
+  char s[] = "bolo har har Mahadev" ; 
+  ret(s , 'a' , 'o') ; 
+
+  printf("%s" , s) ; 
+
+
+
+
+
+  return 0 ;
 }

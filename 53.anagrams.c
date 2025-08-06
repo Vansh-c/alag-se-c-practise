@@ -11,9 +11,9 @@
  int main()
  {
     char w1[] = "listen" ; 
-    char w2[] = "mnb" ; 
+    char w2[] = "inlets" ; 
 
-    if(isanagram){
+    if(isanagram(w1, w2)){
         printf("anagram \n"); 
 
     }
